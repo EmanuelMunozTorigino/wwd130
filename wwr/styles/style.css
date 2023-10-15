@@ -49,7 +49,8 @@ nav a:hover {
 }
 .book, .join {
     border-radius: 5px;
-    background-color: #5FA8D3;
+    border: solid;
+    background-color: black /* #5FA8D3 */;
     color: #416CA6;
     font-size: 18px;
     text-decoration: none;
@@ -58,14 +59,13 @@ nav a:hover {
 }
 .book:hover, .join:hover {
     background-color: #416CA6;
-    color: white;
+    color: #BEE9E8;
+    border: solid;
 }
 #background {
     background-color: #BEE9E8;
     height: 725px;
 }
-
-
 
 /* Fonts  */
 
