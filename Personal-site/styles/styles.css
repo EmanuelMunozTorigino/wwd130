@@ -130,39 +130,46 @@ li{
 
 
 
-#programming_languages {
+#container_programming_languages {
     display: flex;
+    flex-direction: column;
     margin-left: 7vw;
     width: 80vw;
-    height: 700px;
     border: 10px solid gray;
     border-radius: 25%;
+    height: 70vh;
 }
 
 .languages-img {
-    width: 250px;
-    height: 250px;
+    width: 17vw;
+}
+
+.container-welcome-project {
+    display: flex;
+    justify-content: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 }
 
 
 
-#programming_languages .images-inline {
-    display: inline;
+.images_inline {
+    display: flex;
+    justify-content: center;
 }
 
+.container_project_title {
+    display: flex;
+    align-items: start;
+    padding-top: 3vh;
+    padding-left: 3vh;
+}
 
+.container_project_title h2 a {
+    color: black;
+    text-decoration:underline;
 
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
