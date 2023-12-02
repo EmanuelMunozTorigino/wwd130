@@ -95,7 +95,7 @@ li{
 }
 
 
-.container-welcome-message > div > img {
+.profile-photo {
     width: 30vw;
     padding-right: 3vw;
     border-radius: 45%;
