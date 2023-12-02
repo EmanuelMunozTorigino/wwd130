@@ -1,0 +1,277 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Vollkorn&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*header componentss*/
+header {
+    height: 15vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    display: flex;
+    background-color: #6e0202ff;
+    filter: drop-shadow(3px 3px 5px rgb(83, 83, 83));
+}
+
+/*container_logo //  containerNav*/
+
+.containerLogo{
+    width: 20vw;
+    display: flex;
+    justify-content:start;
+    padding-inline-start: 3vw;
+    align-items: center;
+    height: 15vh;
+    
+}
+
+.containerLogo_img{
+    border-radius: 50%;
+    height: 15vh;
+    border: solid black 1px; 
+
+}
+
+
+.containerNav{
+    width: 80vw;
+    display: flex;
+}
+.containerNav_ul{
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5vh;
+    text-decoration: none;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: Vollkorn;
+}
+
+a:hover {
+    color: black;
+    background-color: beige;
+    border-radius: 30px;
+}
+
+li{
+    list-style-type:none
+}
+.skills{
+    width: 40vw;
+}
+
+.home , .aboutme{
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+/* Main section - home page - Welcome message */
+
+.container-welcome-message {
+    max-width: 100vw;
+    display: flex;
+    margin-top: 20vh;
+    margin-bottom: 15vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.container-welcome-message > div > img {
+    width: 30vw;
+    padding-right: 3vw;
+    border-radius: 45%;
+}
+
+
+.container-welcome-message h1 {
+    color: #6e0202ff;
+    font-size: 7em;
+    margin: 0 auto;
+    font-family: Vollkorn;
+}
+
+
+.container-welcome-message h2 {
+    font-size: 3em;
+    margin: 0 auto;
+    font-family: Vollkorn;
+}
+
+
+.container-welcome-message p {
+    font-size: 2em;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+}
+
+
+/* Programming Languages box */
+
+
+
+#programming_languages {
+    display: flex;
+    margin-left: 7vw;
+    width: 80vw;
+    height: 700px;
+    border: 10px solid gray;
+    border-radius: 25%;
+}
+
+.languages-img {
+    width: 250px;
+    height: 250px;
+}
+
+
+
+#programming_languages .images-inline {
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main section for Skills & projects */
+
+.container-skills-project {
+    text-align: center;
+    width: 100vw;
+    margin-top: 20vh;
+
+}
+
+.html-css-js-image {
+    width: 40vw;
+
+}
+
+.container-img-skills {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.container-skills-project div h2 {
+    margin-top: -15vh;
+    font-size: 3.5vw;
+    font-family: Vollkorn;
+    margin-bottom: 2vh;
+}
+
+.container-tab {
+    margin-left: 25vw;
+    background:rgba(73, 73, 73, 0.363);
+    border-radius: 10px;
+    width: 50vw;
+}
+
+
+.tab button {
+    justify-content: space-around;
+    width: 16vw;
+    border: 3px beige solid;
+    color: black;
+}
+
+.tab button:hover {
+    width: 16vw;
+    background: #000;
+    color: beige;
+}
+
+
+
+
+
+
+footer {
+    margin-top: 5vw;
+    display: flex;
+    width: 100vw;
+    height: 55vh;
+    background-color:  rgb(29, 28, 28);
+    color: white;
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-footer {
+    display: flex;
+    align-items: center;
+}
+
+#first {
+    display: flex;
+    text-align: center;
+    border-right: solid 4px black;
+    padding-right: 25px;
+}
+
+#second {
+    display: flex;
+    text-align: start;
+    padding-left: 25px;
+}
+
+.logo_in_footer {
+        border-radius: 50%;
+        height: 15vh;
+        border: solid black 1px;
+}
+
+.p-footer {
+        font-size: 2.7vw;
+        font-family: Montserrat;
+}
+
+.a-footer {
+    font-size: 2vw;
+    font-family: Vollkorn;
+}
+
+.logos-footer {
+    width: 3vw;
+}
+
+
+.credits {
+    padding-top: 3vh;
+    text-align: center;
+}

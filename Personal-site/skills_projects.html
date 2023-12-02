@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Portfolio/Skills & Projects</title>
 </head>
 <body>
     <header>
-        <div><img src="images/logo.png" alt="Logo"></div>
-        <nav>
-            <ul>
-                <li>
+        <div class="containerLogo">
+            <img class="containerLogo_img" src="images/logo.png" alt="Logo">
+        </div>
+        <nav class="containerNav">
+            <ul class="containerNav_ul">
+                <li class="home" >
                     <a href="index.html">HomePage</a>
                 </li>
-                <li>
+                <li class="skills">
                     <a href="skills_projects.html">Skills & Projects</a>
                 </li>
-                <li>
+                <li class="aboutme">
                     <a href="about_me.html">About Me</a>
                 </li>                
             </ul>    
@@ -24,50 +27,49 @@
     </header>
 
     <main>
-        <div>
-            <div>
+        <div >
+            <div class="container-skills-project">
                 <div>
                     <h1>I am passionate for Web Design 
                         <br>and create programs to solve 
                         <br>real issues with python
                     </h1>
                 </div>
-                <div>
-                    <div><img src="images/Programming_languages.jpg" alt="represent two peoples working with different programming languages"></div>
-                    <div><img src="images/python.png" alt="Python Logo"></div>
+                <div class="container-img-skills">
+                    <div><img class="html-css-js-image" src="images/Programming_languages.jpg" alt="represent two peoples working with different programming languages"></div>
+                    <div><img class="html-css-js-image" src="images/python.png" alt="Python Logo"></div>
                 </div>
                 
             </div>
         
-            <div>
+            <div class="container-skills-project">
                 <div>
                     <h2>Here are some examples of my own projects:</h2>
                 </div>
                 
+                <div class="container-tab">
                 <div class="tab">
                     <button class="tablinks" onclick="openCity(event, 'java_script')">Java Script</button>
                     <button class="tablinks" onclick="openCity(event, 'css_html')">CSS & HTML</button>
                     <button class="tablinks" onclick="openCity(event, 'python')">Python</button>
-                  </div>
+                </div>
                   
                   <!-- Tab content -->
                   <div id="java_script" class="tabcontent">
                     <h3>Java Script</h3>
-                  <p>London is the capital city of England.</p>
+                  <p></p>
                   </div>
                   
-                  <div id="css_html" class="tabcontent">
+                  <div id="css_html" class="tabcontent" style="display: none;">
                     <h3>CSS & HTML</h3>
-                    <p>Paris is the capital of France.</p>
+                    <p></p>
                   </div>
                   
-                  <div id="python" class="tabcontent">
+                  <div id="python" class="tabcontent" style="display: none;">
                     <h3>Python</h3>
-                    <p>Tokyo is the capital of Japan.</p>
+                    <p></p>
                   </div>
-                
-
-
+                </div>
             </div>
         
         
@@ -85,48 +87,41 @@
 
     </main>
 
-
     <footer>
-        <div>
-            <div id="background-footer">
-                <div>
+          
+        <div class="container-footer1" >
+            <div class="container-footer"> 
+                <div id="first">
                     <div>
-                        <div><img src="images/logo.png" alt="Logo"></div>
-                    </div>
-                    
-                    <div>
-                        <p> Emanuel Muñoz Torigino <br> I am 23 years old <br> I live in Buenos Aires Argentina</p>
-                    </div>
-                    
-                    <div>
-                        <p>Contact me</p>
-                        <div><a href="https://www.instagram.com/ema_douglas/">Instagram</a></div>
-                        <div><a href="https://www.facebook.com/EmanuelLDS2000/">Facebook</a></div>
-                        <div><a href="https://github.com/EmanuelMunozTorigino/wwd130">Git-Hub</a></div>
+                        <div><img class="logo_in_footer" src="images/logo.png" alt="Logo"></div>
+                        <p class="p-footer"> Emanuel Muñoz Torigino <br> I am 23 years old <br> I live in Buenos Aires Argentina</p>
+                        <div >
+                            <div>Contact me: <a class="a-footer" href="https://www.instagram.com/ema_douglas/"><img class="logos-footer" src="images/instagram.png" alt="Instagram logo"></a>
+                                <a class="a-footer" href="https://www.facebook.com/EmanuelLDS2000/"><img class="logos-footer" src="images/facebook.png" alt="Facebook logo"></a>
+                                <a class="a-footer" href="https://github.com/EmanuelMunozTorigino/wwd130"><img class="logos-footer" src="images/logotipo-de-github.png" alt="Git-Hub logo"></a></div>
+                        </div>
                     </div>
                 </div>
-                <div>
+            
+                <div id="second">
                     <div>
-                        <div><p>Are you willing to work with me? 
-                        <br>Do you want to know more about me?
-                        <br>Contact me:</p>
+                        <div><p class="p-footer">Are you willing to work with me? 
+                            <br>Do you want to know more about me?
+                            <br>Contact me:</p>
+                            <div><img class="logos-footer" src="images/email.png" alt="email logo"><a> emanuel.munoz.torigino@gmail.com</a></div>
+                            <div><a class="a-footer" href="https://www.linkedin.com/in/emanuelmunoztorigino/"><img class="logos-footer" src="images/linkedin.png" alt="Git-hub logo"></a> Emanuel Muñoz Torigino</div>
+                        </div>
                     </div>
-                    
-                    </div>
-                        <div><a href="email">emanuel.munoz.torigino@gmail.com</a></div>
-                    <div>
-                        <div><a href="https://www.linkedin.com/in/emanuelmunoztorigino/">LinkedIn</a></div>
-                    </div>
-                </div>
-
-                <div>
-                    <p> Repository &copy; 2023 - Emanuel Muñoz Torigino - <a href="https://emanuelmunoztorigino.github.io/wwd130/Personal-site/site-plan.html">Site plan</a></p>
                 </div>
             </div>
-
+                <div class="credits">
+                    <p> Repository &copy; 2023 - Emanuel Muñoz Torigino - <a href="https://emanuelmunoztorigino.github.io/wwd130/Personal-site/site-plan.html"> Site plan - credits</a></p>
+                </div>
+            
 
         </div>
 
+    
 
     </footer>
 
