@@ -6,9 +6,9 @@ Fonts are separated by a | */
 :root {
   /* change the values below to your colors from your palette */
   --primary-color:  #6e0202ff   ;
-  --secondary-color: #540d6eff ;
-  --accent1-color: #396E94;
-  --accent2-color: #7f636eff;
+  --secondary-color: rgb(29, 28, 28) ;
+  --accent1-color: white;
+  --accent2-color: #540d6eff;
 
   /* change the values below to your chosen font(s) */
   --heading-font: Vollkorn, Macondo, open-sans  ;
@@ -20,8 +20,8 @@ Fonts are separated by a | */
   --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
   --paragraph-background-color: #396E94  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
+  --nav-link-color: white;
+  --nav-background-color: #6e0202ff ;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #396E94;
 }
@@ -175,13 +175,14 @@ nav a:hover {
 }
 
 
-#logo-circle img {
-  border-radius: 50%;
+#logo {
+  border: 3px solid black;
+  border-radius:  50%;
   width: 200px;
   height: 200px;
 }
 
 img {
-  width: 500px;
-  height: 500px;
+  width: 250px;
+  height: 250px;
 }

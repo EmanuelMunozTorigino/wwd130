@@ -53,15 +53,16 @@ header {
 
 }
 a{
+    transition: .5s;  
+
     text-decoration: none;
     color: white;
     font-family: Vollkorn;
 }
 
 a:hover {
-    color: black;
-    background-color: beige;
-    border-radius: 30px;
+    transition: 1s;  
+    border-bottom: 2px solid white; 
 }
 
 li{
@@ -223,7 +224,94 @@ li{
 
 
 
+/*--------------------------------------------------------------------------------------------*/
 
+
+/* about me page layout style */
+
+
+.space {
+    padding-top: 17vh;
+}
+
+
+.container_main_aboutme {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+
+}
+
+.container_main_img {
+    display: flex;
+}
+
+.main_img {
+    width: 30vw;
+}
+
+.container_biography {
+    flex-direction: column;
+    width: 60vw;
+    display: flex;
+    padding: 5vh;
+}
+
+
+
+.container_biography > div > h1 {
+    padding-top: 3vh;
+    color: #6e0202ff;
+    font-size: 5vw;
+    margin: 0 auto;
+    font-family: Vollkorn;
+}
+
+
+.container_biography > div > h2 {
+    padding-top: 3vh;
+    font-size: 2.5vw;
+    margin: 0 auto;
+    font-family: Vollkorn;
+}
+
+
+.container_biography > div > p {
+    padding-top: 3vh;
+    font-size: 2vw;
+    font-family: Montserrat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ..Footer layout style.. */
 
 
 footer {
