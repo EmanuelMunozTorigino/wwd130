@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web_Components</title>
+    <link rel="stylesheet" href="simple_web_style.css">
+</head>
+<body>
+    
+    <main>
+
+        <div>
+            <h1>Temples around the world</h1>    
+        </div>        
+        <!-- Container for the image gallery -->
+    <div class="container">
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+            <img src="images/BuenosAires_temple.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides"> 
+        <div class="numbertext">2 / 6</div>
+            <img src="images/SaltLake_Temple.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+            <img src="images/Rome_Temple.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+            <img src="images/RiodeJaneiro_Temple.jpeg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+            <img src="images/CordobaArg_Temple.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+            <img src="images/SanDiego_Temple.jpg" style="width:100%">
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <!-- Image text -->
+        <div class="caption-container">
+        <p id="caption"></p>
+        </div>
+    
+        <!-- Thumbnail images -->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="images/BuenosAires_TempleSmall.jpg" style="width:100%" onclick="currentSlide(1)" alt="Buenos Aires, Argentina Temple">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/SaltLake_Temple_Small.jpg" style="width:100%" onclick="currentSlide(2)" alt="Salt Lake City, Utah Temple">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/Rome_TempleSmall.jpg" style="width:100%" onclick="currentSlide(3)" alt="Rome, Italy Temple">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/RiodeJaneiro_TempleSmall.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Rio de Janeiro, Brazil Temple">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/Cordoba_Arg_TempleSmall.jpg" style="width:100%" onclick="currentSlide(5)" alt="Córdoba, Argentina Temple">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/SanDiego_TempleSmall.jpg" style="width:100%" onclick="currentSlide(6)" alt="San Diego, California Temple">
+            </div>
+        </div>
+    </div>
+
+    <div class="more_info"><a href="https://www.churchofjesuschrist.org/temples?lang=eng" target="_blank">Click here</a> to know more about temples</div>
+
+
+
+    </main>
+
+
+
+
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          let captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+    </script>
+
+
+
+</body>
+</html>
+
+
+
