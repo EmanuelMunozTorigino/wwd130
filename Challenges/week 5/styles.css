@@ -15,13 +15,13 @@ html {
 
 
 
-/*A good practice for have responsive images is reset the img adding a max-width property of 100%*/
+/* A good practice for have responsive images is reset the img adding a max-width property of 100% */
 
 img {
     max-width: 100%;
     height: auto;
 }
-
+ 
 
 body {
     display: block;
