@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+</head>
+<style>
+    /* Apply a natural box layout model to all elements, but allowing components to change 
+    ~ Paul Irish ~
+*/
+
+html {
+    box-sizing: border-box;
+    font-family:sans-serif ;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+
+/*A good practice for have responsive images is reset the img adding a max-width property of 100%*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+body {
+    width: 100vw;
+    background: rgb(255, 143, 162);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-size {
+    text-align: center;
+}
+
+.bg-size ol {
+    text-align: start;
+}
+
+.russell_nelson_portrait {
+    width: 250px;
+}
+
+
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h1:hover {
+    color: black;
+    transition-delay: .15s;
+}
+
+
+.p_cite_wh {
+    font-size: 1rem;
+    color: white;
+}
+
+.cite_name {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+
+
+.list_principles {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.list_principles li {
+padding: .4rem;
+}
+
+.p_final {
+    font-size: 3rem;
+    width: 30%;
+    color: white;
+}
+
+.p_cite_bk {
+    padding: 0;
+    margin-top: 0;
+    font-weight: bold;
+
+}
+
+
+</style>
+
+<body>
+
+    <div class="bg-size"><h1>Education</h1></div>
+    <div class="bg-size"><p class="p_cite_wh">Education is the difference between wishing you could help others & being able to help them </p></div>
+    <div><cite class="cite_name">---President Nelson---</cite></div>
+    <div>
+        <ol class="list_principles">
+            <li>Faith in the Lord Jesus Christ</li>
+            <li>Repentance</li>
+            <li>Baptism by immersion for the remission of sins</li>
+            <li>Laying on of hands for the gift of the Holy Ghost</li>
+        </ol>
+    </div class="bg-size">
+    <div class="russell_nelson_portrait"><img  src="images/russell_nelson_portrait.jpeg" alt="Russell M. Nelson Portrait"></div>
+    <div class="bg-size p_final"><p>"Because of the Savior's Atonement, His gospel provides an invitation to keep changing, growing, and becoming more pure."</p></div>
+    <div class="bg-size p_cite_bk"><cite>Russell M. Nelson</cite>
+        <p class="p_cite_bk">President of the Church of Jesus Christ of Latter-day Saints</p>
+    </div>
+</body>
+</html>

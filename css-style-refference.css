@@ -1,0 +1,22 @@
+/* Apply a natural box layout model to all elements, but allowing components to change 
+    ~ Paul Irish ~
+*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+
+/*A good practice for have responsive images is reset the img adding a max-width property of 100%*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
